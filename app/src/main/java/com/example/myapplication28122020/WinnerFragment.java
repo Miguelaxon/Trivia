@@ -1,5 +1,6 @@
 package com.example.myapplication28122020;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -56,17 +57,29 @@ public class WinnerFragment extends Fragment {
         binding.btnVolver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addLogoTriviaFragment();
+                addTitleFragment();
+            }
+        });
+
+        binding.button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                onSalir();
             }
         });
     }
 
-    private void addLogoTriviaFragment(){
-        LogoTriviaFragment logoTriviaFragment = LogoTriviaFragment.newInstance(name);
+    private void addTitleFragment(){
+        TitleFragment titleFragment = TitleFragment.newInstance();
         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction()
-                .replace(R.id.content_fragment, logoTriviaFragment, TitleFragment.
+                .replace(R.id.content_fragment, titleFragment, TitleFragment.
                         class.getSimpleName()).addToBackStack(null);
         fragmentTransaction.commit();
+    }
+
+    private void onSalir(){
+        Intent salida = new Intent( Intent.ACTION_MAIN); //Llamando a la activity principal
+        System.exit(0); // La cerramos.
     }
 }
