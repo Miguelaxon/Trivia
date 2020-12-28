@@ -14,4 +14,8 @@
     <string name="txImage">¿A que logo le pertenece esta imagen?</string>
     <string name="drscImage">Imagen de prueba</string>
     <string name="btnName">Enviar</string>
+    <string name="btnRegreso">Regresar</string>
+    <string name="mensajeLoser">Inténtalo nuevamente %1$s ...</string>
+    <string name="todo">imagenCampeon</string>
+    <string name="mensajeWinner">Bien hecho %1$s !!! \n <b>Eres un campeón!</b></string>
 </resources>
