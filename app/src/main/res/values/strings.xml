@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">My Application 28122020</string>
+    <string name="titleFragment">
+        Bienvenido.\n
+        Ingresa tu nombre para comenzar.</string>
+    <string name="saludo">
+        Hola,
+        <b>%1$s</b></string>
+    <string name="radiobutton1">WhatsApp</string>
+    <string name="radiobutton2">Youtube</string>
+    <string name="radiobutton3">Twitter</string>
+    <string name="radiobutton4">Facebook</string>
+    <string name="btnSend">Enviar</string>
+    <string name="txImage">¿A que logo le pertenece esta imagen?</string>
+    <string name="drscImage">Imagen de prueba</string>
+    <string name="btnName">Enviar</string>
+</resources>
